@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget App</h1>
+        
+        <div class="budget_content">
+            <div class="your_budget" >
+                <form>
+                    <label for="budget">Your Budget :</label>
+                    <input type="number" placeholder="Enter Your Budget" class="budget_input">
+                    <button class="btn" id="btn_budget">Calculate</button>
+                </form>
+            </div>
+
+            <div class="your_expenses">
+                <form>
+                    <label for="expense">Expense Details :</label>
+                    <input type="text" placeholder="Enter your Expense Description" class="expense_text_input">
+                    <input type="number" placeholder="Enter Amount" class="expense_amount_input">
+                    <button class="btn" id="btn_expense">Add Expense</button>
+                </form>
+            </div>
+        </div>
+        
+        <ul type="none" class="cards">
+            <li>
+                <i class="bx bx-money"></i>
+                <span class="info">
+                    <h2><span>₹</span> <span class="budget_card">0</span></h3>
+                    <p>Budget</p>
+                </span>
+            </li>
+
+            <li>
+                <i class="bx bx-credit-card"></i>
+                <span class="info">
+                    <h2><span>₹</span> <span class="expense_card">0</span></h3>
+                    <p>Expenses</p>
+                </span>
+            </li>
+
+            <li>
+                <i class="bx bx-dollar"></i>
+                <span class="info">
+                    <h2><span>₹</span> <span class="balance_card">0</span></h3>
+                    <p>Balance</p>
+                </span>
+            </li>
+        </ul>
+        
+        <div class="table_content">
+            <h2>Budget Details :</h2>
+            <div class="table_data">
+                <!-- <ul class="transactions" type="none">
+                    <li>1</li>
+                    <li>Gaming Keyboard</li>
+                    <li><span>₹</span>500</li>
+                    <li>
+                        <button type="button" class="btn_edit">Edit</button>
+                        <button type="button" class="btn_delete">Delete</button>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
